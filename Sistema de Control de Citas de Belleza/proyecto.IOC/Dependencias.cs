@@ -5,9 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Sistema_de_Control_de_Citas_de_Belleza.Infrastructure.DBContext;
+using proyecto.Infrastructure.DBContext;
 using Microsoft.EntityFrameworkCore;
-using Sistema_de_Control_de_Citas_de_Belleza.Infrastructure;
+//using proyecto.Application.Implementacion;
+//using proyecto.Application.Interfaces;
+//using proyecto.Infrastructure.Implementacion;
+//using proyecto.Infrastructure.Interfaces;
+
+
 
 namespace proyecto.IOC
 {

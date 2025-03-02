@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using proyecto.Domain.Models;
 
-namespace Sistema_de_Control_de_Citas_de_Belleza.Infrastructure.DBContext;
+namespace proyecto.Infrastructure.DBContext;
 
 public partial class SistemaCitasBellezaContext : DbContext
 {
