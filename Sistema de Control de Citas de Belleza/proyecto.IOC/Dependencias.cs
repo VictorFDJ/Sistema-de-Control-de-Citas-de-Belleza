@@ -7,17 +7,25 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using proyecto.Infrastructure.DBContext;
 using Microsoft.EntityFrameworkCore;
-//using proyecto.Application.Implementacion;
-//using proyecto.Application.Interfaces;
-//using proyecto.Infrastructure.Implementacion;
-//using proyecto.Infrastructure.Interfaces;
+using proyecto.Application.Implementacion;
+using proyecto.Application.Interfaces;
+using Proyecto.Infrastructure.Implementacion;
+using Proyecto.Infrastructure.Interfaces;
+using System.Runtime.CompilerServices;
 
 
 
 namespace proyecto.IOC
 {
-    class Dependencias
+    public static class Dependencias
     {
+        public static void InyectarDependencia(this IServiceCollection services, IConfiguration Configuration)
+        {
+            services.AddDbContext<SistemaCitasBellezaContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("CadenaSQL"));
 
+            });
+        }
     }
 }
