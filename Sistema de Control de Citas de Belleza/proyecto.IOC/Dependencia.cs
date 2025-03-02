@@ -1,6 +1,6 @@
 ﻿namespace proyecto.IOC
 {
-    public class Class1
+    public static class Dependencia
     {
 
     }
