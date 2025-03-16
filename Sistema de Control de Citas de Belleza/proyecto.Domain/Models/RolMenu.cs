@@ -7,8 +7,7 @@ namespace proyecto.Domain.Models;
 
 public partial class RolMenu
 {
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    
 
     public int Id { get; set; }
 
